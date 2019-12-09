@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.webonnix.beamprivacywallet</id>
-  <name>beamprivacywallet</name>
+  <id>mw.beam.Wallet</id>
+  <name>Beamwallet</name>
   <summary>Beam privacy wallet</summary>
  
   <description>

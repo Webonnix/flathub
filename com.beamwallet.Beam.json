@@ -1,0 +1,40 @@
+{
+  "app-id": "com.beamwallet.Beam",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.34",
+  "sdk": "org.gnome.Sdk",
+  "command": "BeamWallet",
+  "finish-args": [
+    "--filesystem=home",
+    "--share=network",
+    "--socket=x11"
+  ],
+  "modules": [
+      {
+          "name": "BeamWallet",
+          "buildsystem": "simple",
+          "build-commands": [
+              "install -D hello.sh /app/bin/hello.sh"
+          ],
+          "sources": [
+            {
+              "type": "extra-data",
+              "filename": "Beam-Wallet-3.1.5765.deb",
+              "only-arches": ["x64"],
+              "sha256": "816f5b952b36fb5283f90ec693ff1fdd5f4c9038681024b97b4b3104fd27ac73",
+              "size": 31585086,
+              "url": "https://builds.beam.mw/mainnet/2019.08.08/Release/linux/Beam-Wallet-3.1.5765.deb"
+            }, {
+              "type": "file",
+              "path": "build.sh"
+            }, {
+              "type": "file",
+              "path": "entrypoint.sh"
+            }, {
+              "type": "file",
+              "path": "com.BeamWallet.desktop.appdata.xml"
+            }
+          ]
+      }
+  ]
+}

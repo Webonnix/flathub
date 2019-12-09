@@ -1,0 +1,27 @@
+      {
+        "app-id": "mw.beam.Wallet",
+        "runtime": "org.gnome.Platform",
+        "runtime-version": "3.34",
+        "sdk": "org.gnome.Sdk",
+        "command": "BeamWallet",
+        "finish-args": [
+            "--share=network",
+            "--share=ipc",
+            "--socket=x11",
+            "--socket=wayland"
+        ],
+        "modules": [
+            {
+                "name": "BeamWallet",
+                "buildsystem": "cmake",
+                "sources": [
+                    {
+                        "type": "git",
+                        "url": "https://github.com/BeamMW/beam.git",
+                        "branch": "mainnet",
+                        "commit" : "1d70ac5d3bcfdb0f3fe59536230db69936cbbe94"
+                    }
+                ]
+            }
+        ]
+    }
