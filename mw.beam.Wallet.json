@@ -19,7 +19,7 @@
                         "type": "git",
                         "url": "https://github.com/BeamMW/beam.git",
                         "branch": "mainnet",
-                        "commit" : "1d70ac5d3bcfdb0f3fe59536230db69936cbbe94"
+                        "commit" : "51e0a7e328c0196ecb1f3fdb54405d89b994ff96"
                     }
                 ]
             }
